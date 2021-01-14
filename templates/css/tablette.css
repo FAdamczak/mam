@@ -1,0 +1,18 @@
+.container {
+  border: 0.5em solid #007bff;
+  border-radius: 1em;
+}
+
+.icone {
+  color : #007bff;
+}
+
+.idTablette {
+  text-align: center;
+  color : #007bff;
+  font-size: 1.3em;
+}
+
+.bordure {
+  border: 2px solid black;
+}

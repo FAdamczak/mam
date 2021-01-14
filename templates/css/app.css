@@ -1,0 +1,68 @@
+hr {
+  color: #007bff;
+  background-color: #007bff;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.encadre {
+  border: 0.2em solid #007bff;
+  border-radius: 0.75em;
+}
+
+.batterie {
+  text-align: center;
+}
+
+.batterie_texte {
+  font-size: 0.75em;
+}
+
+.icone {
+  color : #007bff;
+}
+
+.appliBiblio {
+  text-align: center;
+  border: 0.1em solid #007bff;
+  border-radius: 0.75em;
+}
+
+.selected {
+  border: 0.3em solid #007bff;
+  border-radius: 0.75em;
+}
+
+.rapport {
+  background-color: #F2F2F2;
+  border-color : 1em solid #F2F2F2;
+  border-radius: 0.75em;
+  text-align: left;
+}
+
+.rapport-titre {
+  text-align: center;
+}
+
+
+.rapport-tablette {
+  /* */
+}
+
+.rapport-aaplication {
+  /* */
+}
+
+.rapport-succes {
+  color: #04B404;
+}
+
+.rapport-echec {
+  color : #DF0101;
+}
+
+
+#menu {
+  border : 0.5em solid #007bff;
+  border-radius: 1em;
+}
