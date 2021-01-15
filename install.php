@@ -88,15 +88,11 @@
     $data = str_replace("{{dbusername}}", $_POST['dbUsername'],$data);
     $data = str_replace("{{dbpassword}}", $_POST['dbPassword'],$data);
 
-    ($os == "Linux") ? $data = str_replace("{{prefixe}}", "",$data) : $data = str_replace("{{prefixe}}", "platform-tools\\",$data);
-
-    /*
-    if($_POST['typeInstall'] == 'linux') {
+    if($os == 'linux') {
       $data = str_replace("{{prefixe}}", "",$data);
     } else {
-      $data = str_replace("{{prefixe}}", "platform-tools\\",$data);
+      $data = str_replace("{{prefixe}}", "platform-tools",$data);
     }
-    */
 
     $fp = fopen($dest, 'w');
     if ($fp  === false) {
@@ -127,7 +123,8 @@
   		}
   		else {
   			$dest = $_SERVER["DOCUMENT_ROOT"].DIRECTORY_SEPARATOR."mam".
-  					DIRECTORY_SEPARATOR."FOLDERS". DIRECTORY_SEPARATOR.$folder;
+            DIRECTORY_SEPARATOR.$folder;
+        //print_r($dest);
   			if (mkdir($dest)) {
   				//chmod($dest,777);
   				print "OK";

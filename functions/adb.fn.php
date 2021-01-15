@@ -306,7 +306,8 @@ function hardDesinstalle($package,$id) {
  * @return[String] résultat de la commande
  */
 function getAdb($cmd) {
-  $commande = PREFIXE_ADB."adb ".$cmd;
+  (PREFIXE_ADB=="") ? $prefixe = "" : $prefixe = PREFIXE_ADB.chr(92);
+  $commande = $prefixe."adb ".$cmd;
   $res = shell_exec($commande);
   //debug($res);
   return trim($res);
@@ -320,7 +321,8 @@ function getAdb($cmd) {
  * @return [String] :  résultat de la commande
  */
 function getAdbS($id, $cmd) {
-  $commande = PREFIXE_ADB."adb -s ".$id." ".$cmd;
+  (PREFIXE_ADB=="") ? $prefixe = "" : $prefixe = PREFIXE_ADB.chr(92);
+  $commande = $prefixe."adb -s ".$id." ".$cmd;
   //debug($commande);
   $res = shell_exec($commande);
   //debug($res);

@@ -22,6 +22,7 @@ class Tablette {
 
 
   public function setStatutBouton($statut) {
+    //debug($statut);
     switch ($statut) {
       case 'device':
         $url = "tablettes/visu_tablette.php?id=".$this->numSerie;
