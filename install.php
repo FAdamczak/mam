@@ -108,6 +108,38 @@
     fclose($fp);
     echo "<b>OK</b>";
 
+    //  Création des dossiers nécessaires
+    $folders = [
+  		"DOCUMENTS",
+  		"FICHIERS",
+  		"FICHIERS". DIRECTORY_SEPARATOR ."APK",
+  		"FICHIERS". DIRECTORY_SEPARATOR ."BIBLIOTHEQUE",
+  		"FICHIERS". DIRECTORY_SEPARATOR ."SAUVEGARDE",
+  		"PHOTOS"
+  	];
+    echo "<p>Création du fichier de configuration...............</p>";
+    foreach($folders as $folder) {
+
+  		print "<p>";
+  		print "$folder<br>";
+  		if (is_dir($folder)) {
+  			print "Ce dossier existe déja";
+  		}
+  		else {
+  			$dest = $_SERVER["DOCUMENT_ROOT"].DIRECTORY_SEPARATOR."mam".
+  					DIRECTORY_SEPARATOR."FOLDERS". DIRECTORY_SEPARATOR.$folder;
+  			if (mkdir($dest)) {
+  				//chmod($dest,777);
+  				print "OK";
+  			} else {
+  				print "Erreur";
+  			}
+  		}
+  		print "</p>";
+  	}
+
+
+
     print "<h3>INSTALLATION TERMINÉE</h3>";
     print "<a href='index.php'>Aller sur l'application</a>";
 
