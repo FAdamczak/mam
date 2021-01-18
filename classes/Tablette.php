@@ -29,7 +29,7 @@ class Tablette {
         $bouton = "<a href='$url' class='btn btn-primary idTablette'>";
         $bouton.= $this->nom."</a>";
       break;
-      case 'unauthorised':
+      case 'unauthorized':
         $bouton = "<a href='#' class='btn btn-secondary idTablette'>";
         $bouton.= $this->nom."unauthorized</a>";
       break;
@@ -38,7 +38,7 @@ class Tablette {
         $bouton.= "offline</a>";
       break;
       default:
-        // code...
+        $boutons = "<a href='#' class='btn btn-secondary'>Problème inconnu</a>";
         break;
     }
     $this->statutBouton = $bouton;

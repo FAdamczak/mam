@@ -88,7 +88,7 @@
     $data = str_replace("{{dbusername}}", $_POST['dbUsername'],$data);
     $data = str_replace("{{dbpassword}}", $_POST['dbPassword'],$data);
 
-    if($os == 'linux') {
+    if($os == 'Linux') {
       $data = str_replace("{{prefixe}}", "",$data);
     } else {
       $data = str_replace("{{prefixe}}", "platform-tools",$data);
