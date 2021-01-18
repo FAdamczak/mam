@@ -25,7 +25,7 @@ class Tablette {
     //debug($statut);
     switch ($statut) {
       case 'device':
-        $url = "tablettes/visu_tablette.php?id=".$this->numSerie;
+        $url = "visu_tablette.php?id=".$this->numSerie;
         $bouton = "<a href='$url' class='btn btn-primary idTablette'>";
         $bouton.= $this->nom."</a>";
       break;
