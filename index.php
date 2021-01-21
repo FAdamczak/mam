@@ -23,7 +23,7 @@ $pdo = getPDOLink($config);
     include 'templates/_navbar.php';
 
     if(count($_POST)>0) {
-      debug($_POST);
+      //debug($_POST);
       $leParc = explode("***",$_POST["leParc"]);
       array_pop($leParc);
       //debug($leParc);
