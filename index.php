@@ -52,6 +52,7 @@ $pdo = getPDOLink($config);
           $rapport = installer_profil($pdo,$leParc,$_POST['profil']);
           print "<div class='container mt-4 mb-4'>";
           print $rapport;
+          print "<p class='mt-4'><a href='index.php'><i class='fas fa-home'></i></a></p>";
           print "</div>";
           //debug($rapport);
           break;
@@ -60,6 +61,7 @@ $pdo = getPDOLink($config);
           $rapport = desinstaller_profil($pdo,$leParc,$_POST['profil']);
           print "<div class='container mt-4 mb-4'>";
           print $rapport;
+          print "<p class='mt-4'><a href='index.php'><i class='fas fa-home'></i></a></p>";
           print "</div>";
           break;
 
