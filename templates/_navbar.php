@@ -8,7 +8,7 @@
     </div>
 
     <div class="col">
-      <a class="navbar-brand icone" href="#" data-toggle="tooltip" data-placement="top" title="synchroniser le parc">
+      <a class="navbar-brand icone" href="index.php" data-toggle="tooltip" data-placement="top" title="synchroniser le parc">
         <i class="fas fa-sync icone"></i>
       </a>
     </div>
