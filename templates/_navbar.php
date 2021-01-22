@@ -1,5 +1,5 @@
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
     <!--<a class="navbar-brand" href="#" id="param">Navbar</a>-->
     <div class="col">
       <a class="navbar-brand" href="#" id="param" data-toggle="tooltip" data-placement="top" title="paramètres">
